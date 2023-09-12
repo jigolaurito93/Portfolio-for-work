@@ -1,0 +1,4 @@
+1. Change logo
+2. Finish navbar
+3. Add footer
+4. Change Color
