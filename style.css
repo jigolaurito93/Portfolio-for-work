@@ -289,7 +289,7 @@ h1, h2 {
     align-items: center;
     margin-top: 2rem;
     padding: 3rem 3rem;
-    border: 2px solid black;
+
     min-height: 100vh;
 }
 .about-img-center {
@@ -415,3 +415,113 @@ h1, h2 {
     }
 }
 /* END ABOUT */
+.projects{
+    padding-top: 4rem;
+}
+.project-cards {
+    width: 85vw;
+    margin: 1rem auto;
+}
+
+.project-h1 {
+    margin: 3rem 8rem;
+    font-size: 4rem;
+}
+
+.project-card, .content-text {
+    text-align: center;
+}
+
+.project-img, .content-text {
+    transition: 0.7s all;
+    border-radius: 3px;
+}
+
+.project-card {
+    position: relative;
+    /* CHANGE MARGIN OF CARD */
+    margin: 1rem 4rem;
+    width: 70%;
+    float: left;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+.project-card .content-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 0;
+}
+
+.content-text h2 {
+    padding-top: 35%;
+    font-size: 3rem;
+    font-family: var(--ff-secondary);
+}
+
+.content-text p {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.project-card:hover .content-text {
+    opacity: 1;
+}
+
+.project-card:hover .project-img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+
+}
+
+.more-projects {
+    width: 100%;
+    margin-top: 6rem;
+
+    display: flex;
+    justify-content: center;
+}
+.see-more {
+    width: 30%;
+    color: white;
+    font-family: var(--ff-secondary);
+    font-size: .9rem;
+    max-width: 297px ;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px){
+    .project-cards{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1758px){
+    .project-cards{
+        padding-left: 10rem;
+    }
+    .project-card{
+        margin: 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1711px) {
+    .project-card{
+        min-width: 370px;
+    }
+}
+
+/* ADD MAX WIDTH TO PROJECT CARD */
+/* ADD BUTTON */
+/* CHANGE MAXWIDTH TO PROJECT CARD */
+
+/* ======== END PROJECTS SECTION ============== */
