@@ -223,18 +223,18 @@
         <section class="contact" id="contact">
             <div class="contact-center">
                 <h1 class="contact-text">contact me!</h1>
-                <form action="submit" class="form">
+                <form action="https://formspree.io/f/xgejzeeq" target="_blank" method="POST" class="form">
                     <div class="input-box">
-                        <input type="text" class="c-name input-text" placeholder="Full Name">
-                        <input type="email" class="c-email input-text" placeholder="Email Address">
+                        <input type="text" class="c-name input-text" placeholder="Full Name" name="Name">
+                        <input type="email" class="c-email input-text" placeholder="Email Address" name="Email">
                     </div>
                     <div class="input-box">
-                        <input type="text" class="c-phone input-text" placeholder="Mobile Number">
-                        <input type="text" class="c-subject input-text" placeholder="Email Subject">
+                        <input type="text" class="c-phone input-text" placeholder="Mobile Number" name="Phone">
+                        <input type="text" class="c-subject input-text" placeholder="Email Subject" name="Subject">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="c-message"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="c-message" name="Message"></textarea>
+                    <input type="submit" class="send-message" id="send-message" rows="30" value="Send Message">
                 </form>
-                <button class="send-message" id="send-message" rows="30">Send Message</button>
             </div>
         </section>
         <!-- End Contacts -->
